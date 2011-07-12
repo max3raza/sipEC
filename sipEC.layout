@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_layout_file>
+	<ActiveTarget name="Debug" />
+	<File name="include\cwindow.h" open="0" top="0" tabpos="0">
+		<Cursor position="74" topLine="0" />
+	</File>
+	<File name="include\mainwindow.h" open="0" top="0" tabpos="0">
+		<Cursor position="84" topLine="0" />
+	</File>
+	<File name="include\proxy.h" open="0" top="0" tabpos="0">
+		<Cursor position="474" topLine="20" />
+	</File>
+	<File name="sipEC.pro" open="1" top="0" tabpos="1">
+		<Cursor position="160" topLine="0" />
+	</File>
+	<File name="src\cwindow.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="20" topLine="0" />
+	</File>
+	<File name="src\main.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="48" topLine="0" />
+	</File>
+	<File name="src\mainwindow.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="23" topLine="0" />
+	</File>
+	<File name="src\proxy.cpp" open="0" top="0" tabpos="0">
+		<Cursor position="18" topLine="0" />
+	</File>
+	<File name="src\src.pro" open="1" top="1" tabpos="2">
+		<Cursor position="221" topLine="0" />
+	</File>
+</CodeBlocks_layout_file>
