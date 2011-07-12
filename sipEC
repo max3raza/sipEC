@@ -1,5 +1,0 @@
-TARGET += sipEC.exe
-QT += network
-HEADERS += proxy.h
-SOURCES += proxy.cpp
-SOURCES += main.cpp

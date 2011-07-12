@@ -1,10 +1,8 @@
+TEMPLATE = subdirs
+SUBDIRS = src
 CONFIG += qt debug
-TARGET += sipEC.exe
 QT += network
-HEADERS += proxy.h
-HEADERS += mainwindow.h
-HEADERS += cwindow.h
-SOURCES += proxy.cpp
-SOURCES += main.cpp
-SOURCES += mainwindow.cpp
-SOURCES += cwindow.cpp
+DEPENDPATH += include
+INCLUDE_DIR += include
+INCLUDEPATH += include
+OBJECTS_DIR = obj
