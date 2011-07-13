@@ -5,6 +5,7 @@
 #include <QMessageBox>
 #include <QObject>
 #define MAX_RETRY 5
+#define MAX_CONNECTIONS 1
 
 class Proxy : public QObject
 {
@@ -14,14 +15,12 @@ public:
 	Proxy (QObject* parent, quint16 listenPort,QHostAddress address, quint16 serverPort);
 	/*destructor */
 	virtual ~Proxy();
-	/*get Text*/
-	QString getText();
+	/*startup*/
 	void startup();
 
-	/* public signals*/
-signals:
-	void onInSocketReceive();
-	void onOutSocketReceive();
+	/* callback function*/
+	bool (*fnInSocketReceive)();
+	bool (*fnOutSocketReceive)();
 
 
 private:
@@ -33,18 +32,23 @@ private:
 	QHostAddress serverAddress;
 	quint16 listenPort;
 	quint16 serverPort;
+	/* number of repeat to try
+	 *establish connection to server
+	 */
 	quint16 repeatNum;
+	quint16 conNum;
 	QAbstractSocket::SocketState state;
 
 	/*function*/
 	void messageBox(QString text);
-	void connectToHost();
+	void connectToServer();
 
 	/*slots*/
 private slots:
 	void onNewConnection();
 	void onConnected();
-	void onStateChanged();
-
-
+	void onOutSocketStateChanged();
+    void onInSockeStateChanged();
+    void onReadyInSocket();
+    void onReadyOutSocket();
 };

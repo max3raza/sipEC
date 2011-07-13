@@ -15,4 +15,3 @@ HEADERS += proxy.h
 HEADERS += cwindow.h
 HEADERS += mainwindow.h
 DESTDIR = ../bin
-
